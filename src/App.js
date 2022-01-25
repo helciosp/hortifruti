@@ -15,13 +15,11 @@ export default function App() {
                     <Nav />
                 </div>
                 <main>
-                    <div>
-                        <Routes>
-                            <Route exact path="/" element={<Home />} />
-                            <Route path="/fruity" element={<Fruity />} />
-                            <Route path="/carrinho" element={<Carrinho />} />
-                        </Routes>
-                    </div>
+                    <Routes>
+                        <Route exact path="/" element={<Home />} />
+                        <Route path="/fruity" element={<Fruity />} />
+                        <Route path="/carrinho" element={<Carrinho />} />
+                    </Routes>
                 </main>
                 <footer></footer>
             </div>
