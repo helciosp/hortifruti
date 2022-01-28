@@ -1,0 +1,59 @@
+#fruit-article {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+#fruit {
+    margin: auto;
+}
+
+#conteiner-quantidade {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15%;
+    border-color: black;
+}
+#mais {
+    background-color: rgb(255, 61, 61);
+    transition: background-color 1s;
+    
+}
+#menos {
+    background-color: rgb(94, 255, 61);
+    transition: background-color 1s;
+}
+#mais:hover {
+    background-color: rgba(255, 61, 61, 0.4);
+    
+}
+#menos:hover {
+    background-color: rgba(94, 255, 61, 0.4);
+}
+
+#quantidade {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#button-comprar {
+    width: 100%;
+    background-color: black;
+    border-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+#button-comprar:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#button-comprar:active {
+    background-color: rgba(255, 61, 61, 0.4);
+}

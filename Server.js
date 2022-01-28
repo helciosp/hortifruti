@@ -12,7 +12,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/api/fruit/all", createProxyMiddleware({
+app.use("/api/fruit", createProxyMiddleware({
   target: "https://www.fruityvice.com",
   secure: false,
   changeOrigin: true,

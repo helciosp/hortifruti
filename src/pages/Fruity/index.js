@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../../styles/ListFruity.css"
+import { Link } from 'react-router-dom';
 
 export default function Fruity() {
 
@@ -23,13 +24,15 @@ export default function Fruity() {
 
     return (
         <div id='conteiner'>
-            {fruity.map((item, index) => {
+            {fruity.map((item) => {
                 return (
-                    <button className='fruity-button'>
-                        <article key={index.toString()} className='fruity-article'>
-                            <h2 key={index.toString()}>{item.name}</h2>
-                        </article>
-                    </button>
+                    <Link key={item.id} to={"/fruity/fruit?id=" + item.id}>
+                        <button key={item.id} className='fruity-button'>
+                            <article key={item.id} className='fruity-article'>
+                                <h2 key={item.id}>{item.name}</h2>
+                            </article>
+                        </button>
+                    </Link>
                 )
             })}
         </div>
