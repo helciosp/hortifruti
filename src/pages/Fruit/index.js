@@ -10,7 +10,7 @@ export default function Fruit() {
     const id = searchParams.get("id")
 
     const getFruit = async () => {
-        await fetch(`http://localhost:8000/api/fruit/${id}`)
+        await fetch(`/api/fruit/${id}`)
             .then(function (response) {
                 response.json().then(function (data) {
                     setFruit(data);

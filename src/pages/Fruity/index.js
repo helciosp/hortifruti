@@ -11,7 +11,7 @@ export default function Fruity() {
     }, []);
 
     const getFruity = async () => {
-        await fetch("http://localhost:8000/api/fruit/all")
+        await fetch("/api/fruit/all")
             .then(function (response) {
                 response.json().then(function (data) {
                     setFruity(data)
