@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import '../../../styles/Fruit.css'
+import './Style.css'
 
 export default function Fruit() {
 

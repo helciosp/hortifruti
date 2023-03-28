@@ -1,11 +1,11 @@
 import React from "react"
-import Header from "./components/Header"
-import Nav from "./components/Nav"
+import Header from "../../components/Header"
+import Nav from "../../components/Nav"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Fruity from './pages/Fruity';
-import Carrinho from './pages/Carrinho';
-import Fruit from "./pages/Fruity/Fruit";
+import Home from '../Home';
+import Fruity from '../Fruity';
+import Carrinho from '../Carrinho';
+import Fruit from "../Fruit";
 
 export default function App() {
     return (
